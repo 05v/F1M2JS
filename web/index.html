@@ -18,11 +18,13 @@
     <p id="ReAppear">Now click me!</p>
 
     <script>
+        console.log("Hey!")
+        document.body.style.backgroundColor = "teal"
         
         // GREEN
         const GreenTXT = document.getElementById("GreenTXT");
-
-        GreenTXT.style.color = "green";
+        
+        GreenTXT.style.color = "yellow";
         GreenTXT.addEventListener("click", GreenChange);
 
         function GreenChange(){
