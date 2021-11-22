@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0"> <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" scr="fun.js"></script> 
+
+<body>
+
+    <h1"> Museum Website </h1>
+    <p id="GreenTXT">Click me to change the text scheme!</p>
+    <p id="RedBG">Click me to invert these text colors!</p>
+    <p id="Dissapear">Click me !</p> <p id="Dissapear2">Now me again !</p>
+    <p id="ReAppear">Now click me!</p>
+
+    <script>
+        
+        // GREEN
+        const GreenTXT = document.getElementById("GreenTXT");
+
+        GreenTXT.style.color = "green";
+        GreenTXT.addEventListener("click", GreenChange);
+
+        function GreenChange(){
+            GreenTXT.style.color = "blue";
+            GreenTXT.style.backgroundColor = "yellow";
+        }
+        
+        // RED
+        const RedBG = document.getElementById("RedBG");
+
+        RedBG.style.color = "red";
+        RedBG.addEventListener("click", RedChange);
+
+        function RedChange(){
+            RedBG.style.color = "white";
+            RedBG.style.backgroundColor = "red";
+        }
+        
+
+        // VANISH
+        const Dissapear = document.getElementById("Dissapear");
+
+        Dissapear.style.color = "black";
+        Dissapear.addEventListener("click", DissapearHandler);
+
+        function DissapearHandler(){
+            Dissapear.style.opacity = "0";
+            ReAppear.style.opacity = "100";
+        }
+
+        // ReAppear
+        const ReAppear = document.getElementById("ReAppear");
+
+        ReAppear.style.color = "black";
+        ReAppear.style.opacity = "0";
+        ReAppear.addEventListener("click", ReAppearHandler);
+
+        function ReAppearHandler(){
+            Dissapear2.style.opacity = "100";
+            ReAppear.style.opacity = "0";
+        }
+
+        // VANISH
+        const Dissapear2 = document.getElementById("Dissapear2");
+
+        Dissapear2.style.color = "black";
+        Dissapear2.addEventListener("click", Dissapear2Handler);
+
+        function Dissapear2Handler(){
+            Dissapear2.style.opacity = "0";
+            ReAppear.style.opacity = "100";
+        }
+
+
+    </script>
+
+</body>
+</html>
