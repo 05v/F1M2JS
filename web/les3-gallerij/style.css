@@ -1,0 +1,31 @@
+body{
+
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.prev{
+    float:left; display:inline; width: 40px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 7px;
+    margin: 5px;
+    width: 100px;
+}
+
+.next{
+    float:right; display:inline; width: 40px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 7px;
+    margin: 5px;
+    width: 100px;
+}
+
+
+.button:hover{
+
+    background-color: rgb(71, 71, 71);
+
+}
